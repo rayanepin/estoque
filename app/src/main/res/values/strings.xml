@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Estoque</string>
+    <string name="nome">Nome</string>
+    <string name="preco">Preço</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="remove">Remove</string>
+    <string name="descricao_fab_adiciona_produto">Botão adiciona produto</string>
+</resources>
