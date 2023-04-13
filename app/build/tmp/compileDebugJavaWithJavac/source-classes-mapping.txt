@@ -1,0 +1,28 @@
+br/com/alura/estoque/database/dao/ProdutoDAO.java
+ br.com.alura.estoque.database.dao.ProdutoDAO
+br/com/alura/estoque/ui/activity/ListaProdutosActivity.java
+ br.com.alura.estoque.ui.activity.ListaProdutosActivity
+br/com/alura/estoque/ui/dialog/EditaProdutoDialog.java
+ br.com.alura.estoque.ui.dialog.EditaProdutoDialog
+br/com/alura/estoque/ui/dialog/FormularioProdutoDialog.java
+ br.com.alura.estoque.ui.dialog.FormularioProdutoDialog
+ br.com.alura.estoque.ui.dialog.FormularioProdutoDialog$ConfirmacaoListener
+br/com/alura/estoque/asynctask/BaseAsyncTask.java
+ br.com.alura.estoque.asynctask.BaseAsyncTask
+ br.com.alura.estoque.asynctask.BaseAsyncTask$ExecutaListener
+ br.com.alura.estoque.asynctask.BaseAsyncTask$FinalizadaListener
+br/com/alura/estoque/ui/dialog/SalvaProdutoDialog.java
+ br.com.alura.estoque.ui.dialog.SalvaProdutoDialog
+br/com/alura/estoque/database/EstoqueDatabase.java
+ br.com.alura.estoque.database.EstoqueDatabase
+br/com/alura/estoque/database/converter/BigDecimalConverter.java
+ br.com.alura.estoque.database.converter.BigDecimalConverter
+br/com/alura/estoque/model/Produto.java
+ br.com.alura.estoque.model.Produto
+br/com/alura/estoque/BuildConfig.java
+ br.com.alura.estoque.BuildConfig
+br/com/alura/estoque/ui/recyclerview/adapter/ListaProdutosAdapter.java
+ br.com.alura.estoque.ui.recyclerview.adapter.ListaProdutosAdapter
+ br.com.alura.estoque.ui.recyclerview.adapter.ListaProdutosAdapter$OnItemClickListener
+ br.com.alura.estoque.ui.recyclerview.adapter.ListaProdutosAdapter$OnItemClickRemoveContextMenuListener
+ br.com.alura.estoque.ui.recyclerview.adapter.ListaProdutosAdapter$ViewHolder

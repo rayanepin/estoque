@@ -1,0 +1,92 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.alura.estoque"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] C:\Users\rayan\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+12        android:name="br.com.alura.estoque.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] C:\Users\rayan\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] C:\Users\rayan\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="br.com.alura.estoque.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] C:\Users\rayan\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\rayan\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:6:5-22:19
+18        android:allowBackup="true"
+18-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:7:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] C:\Users\rayan\.gradle\caches\transforms-3\9811bf6e0ea8002748e1a5d1e9eb40bd\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:8:9-43
+22        android:label="@string/app_name"
+22-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:9:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:10:9-54
+24        android:supportsRtl="true"
+24-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:11:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:12:9-40
+27        <activity
+27-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:14:9-21:20
+28            android:name="br.com.alura.estoque.ui.activity.ListaProdutosActivity"
+28-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:14:19-68
+29            android:exported="true" >
+29-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:15:13-36
+30            <intent-filter>
+30-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:16:13-20:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:17:17-69
+31-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:17:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:19:17-77
+33-->C:\Users\rayan\AndroidStudioProjects\Estoque\app\src\main\AndroidManifest.xml:19:27-74
+34            </intent-filter>
+35        </activity>
+36
+37        <service
+37-->[androidx.room:room-runtime:2.5.1] C:\Users\rayan\.gradle\caches\transforms-3\42933164bc477aafe80cf4c9c26978a4\transformed\room-runtime-2.5.1\AndroidManifest.xml:24:9-28:63
+38            android:name="androidx.room.MultiInstanceInvalidationService"
+38-->[androidx.room:room-runtime:2.5.1] C:\Users\rayan\.gradle\caches\transforms-3\42933164bc477aafe80cf4c9c26978a4\transformed\room-runtime-2.5.1\AndroidManifest.xml:25:13-74
+39            android:directBootAware="true"
+39-->[androidx.room:room-runtime:2.5.1] C:\Users\rayan\.gradle\caches\transforms-3\42933164bc477aafe80cf4c9c26978a4\transformed\room-runtime-2.5.1\AndroidManifest.xml:26:13-43
+40            android:exported="false" />
+40-->[androidx.room:room-runtime:2.5.1] C:\Users\rayan\.gradle\caches\transforms-3\42933164bc477aafe80cf4c9c26978a4\transformed\room-runtime-2.5.1\AndroidManifest.xml:27:13-37
+41
+42        <provider
+42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rayan\.gradle\caches\transforms-3\1f2ec24e04aa7670dbdd4e904437e8bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+43            android:name="androidx.startup.InitializationProvider"
+43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rayan\.gradle\caches\transforms-3\1f2ec24e04aa7670dbdd4e904437e8bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+44            android:authorities="br.com.alura.estoque.androidx-startup"
+44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rayan\.gradle\caches\transforms-3\1f2ec24e04aa7670dbdd4e904437e8bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+45            android:exported="false" >
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rayan\.gradle\caches\transforms-3\1f2ec24e04aa7670dbdd4e904437e8bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+46            <meta-data
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rayan\.gradle\caches\transforms-3\1f2ec24e04aa7670dbdd4e904437e8bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+47                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rayan\.gradle\caches\transforms-3\1f2ec24e04aa7670dbdd4e904437e8bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+48                android:value="androidx.startup" />
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rayan\.gradle\caches\transforms-3\1f2ec24e04aa7670dbdd4e904437e8bf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+49            <meta-data
+49-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rayan\.gradle\caches\transforms-3\2843dd8f352d29054991aa53179df82d\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+50                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rayan\.gradle\caches\transforms-3\2843dd8f352d29054991aa53179df82d\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+51                android:value="androidx.startup" />
+51-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rayan\.gradle\caches\transforms-3\2843dd8f352d29054991aa53179df82d\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+52        </provider>
+53    </application>
+54
+55</manifest>
