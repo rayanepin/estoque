@@ -66,10 +66,6 @@ public class ListaProdutosActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         }).execute();
-
-        /*new BaseAsyncTask<>(dao::buscaTodos,
-                resultado -> adapter.atualiza(resultado))
-                .execute();*/
     }
 
     private void configuraListaProdutos() {
