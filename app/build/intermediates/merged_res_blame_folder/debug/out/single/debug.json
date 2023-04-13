@@ -1,15 +1,19 @@
 [
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\layout_produto_item.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\layout\\produto_item.xml"
     },
     {
         "merged": "br.com.alura.estoque.app-merged_res-33:/layout_activity_lista_produtos.xml.flat",
         "source": "br.com.alura.estoque.app-main-35:/layout/activity_lista_produtos.xml"
-    },
-    {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "br.com.alura.estoque.app-merged_res-33:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -20,44 +24,36 @@
         "source": "br.com.alura.estoque.app-main-35:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\menu_lista_produtos_menu.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\menu\\lista_produtos_menu.xml"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "br.com.alura.estoque.app-merged_res-33:/layout_produto_item.xml.flat",
         "source": "br.com.alura.estoque.app-main-35:/layout/produto_item.xml"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/drawable-anydpi_ic_action_adiciona.xml.flat",
-        "source": "br.com.alura.estoque.app-main-35:/drawable-anydpi/ic_action_adiciona.xml"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\drawable-anydpi_ic_action_dinheiro.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\drawable-anydpi\\ic_action_dinheiro.xml"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "br.com.alura.estoque.app-merged_res-33:/drawable-anydpi_ic_action_adiciona.xml.flat",
+        "source": "br.com.alura.estoque.app-main-35:/drawable-anydpi/ic_action_adiciona.xml"
     },
     {
         "merged": "br.com.alura.estoque.app-merged_res-33:/layout_formulario_produto.xml.flat",
@@ -72,11 +68,55 @@
         "source": "br.com.alura.estoque.app-main-35:/menu/lista_produtos_menu.xml"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "br.com.alura.estoque.app-main-35:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\drawable-anydpi_ic_action_adiciona.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\drawable-anydpi\\ic_action_adiciona.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\layout_activity_lista_produtos.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\layout\\activity_lista_produtos.xml"
+    },
+    {
+        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "br.com.alura.estoque.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "br.com.alura.estoque.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "br.com.alura.estoque.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\layout_formulario_produto.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\layout\\formulario_produto.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-pngs-28:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\rayan\\.gradle\\daemon\\7.4\\br.com.alura.estoque.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.png"
     }
 ]
