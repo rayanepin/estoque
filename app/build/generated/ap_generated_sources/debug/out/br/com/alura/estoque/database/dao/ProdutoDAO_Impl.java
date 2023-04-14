@@ -28,6 +28,8 @@ public final class ProdutoDAO_Impl implements ProdutoDAO {
 
   private final BigDecimalConverter __bigDecimalConverter = new BigDecimalConverter();
 
+  private final EntityInsertionAdapter<Produto> __insertionAdapterOfProduto_1;
+
   private final EntityDeletionOrUpdateAdapter<Produto> __deletionAdapterOfProduto;
 
   private final EntityDeletionOrUpdateAdapter<Produto> __updateAdapterOfProduto;
@@ -38,6 +40,29 @@ public final class ProdutoDAO_Impl implements ProdutoDAO {
       @Override
       public String createQuery() {
         return "INSERT OR ABORT INTO `Produto` (`id`,`nome`,`preco`,`quantidade`) VALUES (nullif(?, 0),?,?,?)";
+      }
+
+      @Override
+      public void bind(SupportSQLiteStatement stmt, Produto value) {
+        stmt.bindLong(1, value.getId());
+        if (value.getNome() == null) {
+          stmt.bindNull(2);
+        } else {
+          stmt.bindString(2, value.getNome());
+        }
+        final Double _tmp = __bigDecimalConverter.paraDouble(value.getPreco());
+        if (_tmp == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindDouble(3, _tmp);
+        }
+        stmt.bindLong(4, value.getQuantidade());
+      }
+    };
+    this.__insertionAdapterOfProduto_1 = new EntityInsertionAdapter<Produto>(__db) {
+      @Override
+      public String createQuery() {
+        return "INSERT OR REPLACE INTO `Produto` (`id`,`nome`,`preco`,`quantidade`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
@@ -102,6 +127,18 @@ public final class ProdutoDAO_Impl implements ProdutoDAO {
       long _result = __insertionAdapterOfProduto.insertAndReturnId(produto);
       __db.setTransactionSuccessful();
       return _result;
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void salva(final List<Produto> produto) {
+    __db.assertNotSuspendingTransaction();
+    __db.beginTransaction();
+    try {
+      __insertionAdapterOfProduto_1.insert(produto);
+      __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
     }

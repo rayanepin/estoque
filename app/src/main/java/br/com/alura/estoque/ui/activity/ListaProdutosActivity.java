@@ -52,11 +52,12 @@ public class ListaProdutosActivity extends AppCompatActivity {
         new BaseAsyncTask<>(() -> {
             try {
                 Response<List<Produto>> resposta = call.execute();
-                return resposta.body();
+                List<Produto> produtosNovos = resposta.body();
+                dao.salva(produtosNovos);
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return null;
+            return dao.buscaTodos();
         }, produtosNovos -> {
             if (produtosNovos != null) {
                 adapter.atualiza(produtosNovos);
