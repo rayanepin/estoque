@@ -1,5 +1,8 @@
 package br.com.alura.estoque.retrofit.callback;
 
+import static br.com.alura.estoque.retrofit.callback.MensagemCallBack.MENSAGEM_FALHA_DE_COMUNICACAO;
+import static br.com.alura.estoque.retrofit.callback.MensagemCallBack.MENSAGEM_RESPOSTA_NAO_SUCEDIDA;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -20,16 +23,15 @@ public class CallbackSemRetorno implements Callback<Void> {
         if (response.isSuccessful()) {
             callback.quandoSucesso();
         } else {
-            callback.quandoFalha("Resposta não sucedida");
+            callback.quandoFalha(MENSAGEM_RESPOSTA_NAO_SUCEDIDA);
         }
-
     }
 
     @Override
     @EverythingIsNonNull
     public void onFailure(Call<Void> call,
                           Throwable t) {
-        callback.quandoFalha("Falha de comunicação" + t.getMessage());
+        callback.quandoFalha(MENSAGEM_FALHA_DE_COMUNICACAO + t.getMessage());
     }
 
     public interface RespostaCallback {

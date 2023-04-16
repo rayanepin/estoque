@@ -1,8 +1,11 @@
 package br.com.alura.estoque.repository;
 
+import android.content.Context;
+
 import java.util.List;
 
 import br.com.alura.estoque.asynctask.BaseAsyncTask;
+import br.com.alura.estoque.database.EstoqueDatabase;
 import br.com.alura.estoque.database.dao.ProdutoDAO;
 import br.com.alura.estoque.model.Produto;
 import br.com.alura.estoque.retrofit.EstoqueRetrofit;
@@ -16,8 +19,9 @@ public class ProdutoRepository {
     private final ProdutoDAO dao;
     private final ProdutoService service;
 
-    public ProdutoRepository(ProdutoDAO dao) {
-        this.dao = dao;
+    public ProdutoRepository(Context context) {
+        EstoqueDatabase db = EstoqueDatabase.getInstance(context);
+        dao = db.getProdutoDAO();
         service = new EstoqueRetrofit().getProdutoService();
     }
 
@@ -37,17 +41,17 @@ public class ProdutoRepository {
     private void buscaProdutosNaApi(DadosCarregadosCallback<List<Produto>> callback) {
         Call<List<Produto>> call = service.buscaTodos();
         call.enqueue(new CallbackComRetorno<>(
-                new CallbackComRetorno.RespostaCallback<List<Produto>>() {
-            @Override
-            public void quandoSucesso(List<Produto> produtosNovos) {
-                atualizaInterno(produtosNovos, callback);
-            }
+            new CallbackComRetorno.RespostaCallback<List<Produto>>() {
+                @Override
+                public void quandoSucesso(List<Produto> produtosNovos) {
+                    atualizaInterno(produtosNovos, callback);
+                }
 
-            @Override
-            public void quandoFalha(String erro) {
-                callback.quandoFalha(erro);
-            }
-        }));
+                @Override
+                public void quandoFalha(String erro) {
+                    callback.quandoFalha(erro);
+                }
+            }));
     }
 
     private void atualizaInterno(List<Produto> produtos,
@@ -67,17 +71,18 @@ public class ProdutoRepository {
     private void salvaNaApi(Produto produto,
                             DadosCarregadosCallback<Produto> callback) {
         Call<Produto> call = service.salva(produto);
-        call.enqueue(new CallbackComRetorno<>(new CallbackComRetorno.RespostaCallback<Produto>() {
-            @Override
-            public void quandoSucesso(Produto produtoSalvo) {
-                salvaInterno(produtoSalvo, callback);
-            }
+        call.enqueue(new CallbackComRetorno<>(
+            new CallbackComRetorno.RespostaCallback<Produto>() {
+                @Override
+                public void quandoSucesso(Produto produtoSalvo) {
+                    salvaInterno(produtoSalvo, callback);
+                }
 
-            @Override
-            public void quandoFalha(String erro) {
-                callback.quandoFalha(erro);
-            }
-        }));
+                @Override
+                public void quandoFalha(String erro) {
+                    callback.quandoFalha(erro);
+                }
+            }));
     }
 
     private void salvaInterno(Produto produto,
@@ -97,17 +102,18 @@ public class ProdutoRepository {
     private void editaNaApi(Produto produto,
                             DadosCarregadosCallback<Produto> callback) {
         Call<Produto> call = service.edita(produto.getId(), produto);
-        call.enqueue(new CallbackComRetorno<>(new CallbackComRetorno.RespostaCallback<Produto>() {
-            @Override
-            public void quandoSucesso(Produto resultado) {
-                editaInterno(produto, callback);
-            }
+        call.enqueue(new CallbackComRetorno<>(
+            new CallbackComRetorno.RespostaCallback<Produto>() {
+                @Override
+                public void quandoSucesso(Produto resultado) {
+                    editaInterno(produto, callback);
+                }
 
-            @Override
-            public void quandoFalha(String erro) {
-                callback.quandoFalha(erro);
-            }
-        }));
+                @Override
+                public void quandoFalha(String erro) {
+                    callback.quandoFalha(erro);
+                }
+            }));
     }
 
     private void editaInterno(Produto produto,
@@ -124,22 +130,25 @@ public class ProdutoRepository {
         removeNaApi(produto, callback);
     }
 
-    private void removeNaApi(Produto produto, DadosCarregadosCallback<Void> callback) {
+    private void removeNaApi(Produto produto,
+                             DadosCarregadosCallback<Void> callback) {
         Call<Void> call = service.remove(produto.getId());
-        call.enqueue(new CallbackSemRetorno(new CallbackSemRetorno.RespostaCallback() {
-            @Override
-            public void quandoSucesso() {
-                removeInterno(produto, callback);
-            }
+        call.enqueue(new CallbackSemRetorno(
+            new CallbackSemRetorno.RespostaCallback() {
+                @Override
+                public void quandoSucesso() {
+                    removeInterno(produto, callback);
+                }
 
-            @Override
-            public void quandoFalha(String erro) {
-                callback.quandoFalha(erro);
-            }
-        }));
+                @Override
+                public void quandoFalha(String erro) {
+                    callback.quandoFalha(erro);
+                }
+            }));
     }
 
-    private void removeInterno(Produto produto, DadosCarregadosCallback<Void> callback) {
+    private void removeInterno(Produto produto,
+                               DadosCarregadosCallback<Void> callback) {
         new BaseAsyncTask<>(() -> {
             dao.remove(produto);
             return null;
